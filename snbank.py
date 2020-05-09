@@ -74,15 +74,12 @@ while login:
                                     customerData = fr.read().splitlines()
 
                                     fr.close()
-                                    print(customerData)
                                     print("Input Account Number")
                                     print()
                                     dataChecker = input(":")
                                     for d in customerData:
                                         if dataChecker in d:
                                             finalOutput = d.split()
-                                            print(finalOutput)
-                                            print(type(finalOutput))
                                             print(f"Account name: {finalOutput[0]}\n"
                                                   f"Opening balance: {finalOutput[1]}\n"
                                                   f"Account type: {finalOutput[2]}\n"
